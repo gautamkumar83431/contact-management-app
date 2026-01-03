@@ -8,7 +8,7 @@ export default function App(){
   const [contacts,setContacts] = useState([]);
 
   const loadContacts = async () => {
-    const res = await fetch("http://localhost:5000/api/contacts");
+    const res = await fetch("https://contact-management-app-2-l2tc.onrender.com/");
     setContacts(await res.json());
   };
 
