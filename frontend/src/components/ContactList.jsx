@@ -8,7 +8,7 @@ export default function ContactList({ data, reload }) {
 
   const del = async () => {
     try {
-      await fetch(`http://localhost:5000/api/contacts/${deleteId}`, { method: "DELETE" });
+      await fetch(`https://contact-management-app-2-l2tc.onrender.com/api/contacts/${deleteId}`, { method: "DELETE" });
       setDeleteSuccess(true);
       setDeleteId(null);
       reload();
