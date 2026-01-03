@@ -24,7 +24,7 @@ export default function ContactForm({ reload }) {
     if (Object.keys(errs).length > 0) return;
 
     try {
-      const res = await fetch("http://localhost:5000/api/contacts", {
+      const res = await fetch("https://contact-management-app-2-l2tc.onrender.com/api/contacts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
